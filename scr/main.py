@@ -1,3 +1,4 @@
+from Piece import *
 import pygame
 
 
@@ -21,6 +22,12 @@ class MainWindow():
             for col in range(num):
                 color = ("#242424", "white")[(row+col)%2==0]
                 pygame.draw.rect(self.screen, color, (col*num, row*num, num, num))
+                
+    def initModels(self):
+        '''
+        
+        '''
+        pass
 
 
 def main():
